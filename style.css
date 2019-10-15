@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 40%;
+	margin: 0 auto;
+}
+
+header {
+  background: #538ed8;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px ;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 10;
+  padding: 10;
+  list-style: none;
+  background-origin: auto margin left 20px;;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+  padding-top: 20px;
+
+  position: relative;
+}
+
+nav a {
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: rgb(3, 35, 53);
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
